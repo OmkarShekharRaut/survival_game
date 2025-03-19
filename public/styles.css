@@ -1,0 +1,102 @@
+/* Make sure the canvas fills the entire screen */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrolling */
+    background-color: red;
+    /* Set a default background */
+}
+
+/* Style for the game canvas */
+canvas {
+    display: block;
+    /* Remove extra space around the canvas */
+    width: 100vw;
+    /* Make it full width */
+    height: 100vh;
+    /* Make it full height */
+}
+
+#hearts {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+#crosshair {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    pointer-events: none;
+    /* Prevents it from interfering with mouse clicks */
+}
+
+#score {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#home-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#play-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: #ff6600;
+    color: white;
+    border-radius: 10px;
+}
+
+#play-button:hover {
+    background: #ff4500;
+}
+
+#lives {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: red;
+}
+
+.gameover-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}

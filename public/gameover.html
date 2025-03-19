@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="gameover-container">
+        <h1>Game Over</h1>
+        <button onclick="retryGame()">Retry</button>
+        <button onclick="goHome()">Home</button>
+    </div>
+
+    <script>
+        function retryGame() {
+            window.location.href = "game.html"; // Restart the game
+        }
+
+        function goHome() {
+            window.location.href = "index.html"; // Go to the home screen
+        }
+    </script>
+
+</body>
+
+</html>
